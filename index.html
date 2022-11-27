@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange 4-Rock Paper Scissors Game</title>
+
+    <!-- Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+       <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <section id="rock-paper-scissors">
+        <!-- header -->
+        <div class="container-fluid pt-5 mb-5">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <h1 class="back-icon text-uppercase ms-4">&lt</h1>
+                </div>
+                <div class="col-auto">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="col-auto">
+                    <p class="title text-uppercase">rock paper scissors</p>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+      
+        <!-- content -->
+        <!-- <div class="container d-flex flex-column"> -->
+            <div class="content d-flex justify-content-center">
+                <!-- player -->
+                <div class="player-side d-flex flex-column align-items-center">
+                    <h1 class="user-player fw-bold text-uppercase">player 1</h1>
+                    <button id="player-batu" class="">
+                        <img src="./assets/batu.png" alt="">
+                    </button>
+                    <button id="player-kertas" class="">
+                        <img src="./assets/kertas.png" alt="">
+                    </button>
+                    <button id="player-gunting" class="">
+                        <img src="./assets/gunting.png" alt="">
+                    </button>
+                </div>
+                <!-- result -->
+                <div id="result" class=" d-flex justify-content-center align-items-center position-relative">
+                    <div class="mx-5">
+                        <p class="result text-uppercase">vs</p>
+                        <img id="refresh" src="./assets/refresh.png"  class="position-absolute">
+                    </div>                    
+                </div>
+                <!-- com -->
+                <div class="com-side d-flex flex-column align-items-center">
+                    <h1 class="user-com fw-bold text-uppercase">com</h1>
+                    <button id="com-batu" class="">
+                        <img src="./assets/batu.png" alt="">
+                    </button>
+                    <button id="com-kertas" class="">
+                        <img src="./assets/kertas.png" alt="">
+                    </button>
+                    <button id="com-gunting" class="">
+                        <img src="./assets/gunting.png" alt="">
+                    </button>
+                </div>
+                <!-- refresh --> 
+                <!-- <div class="container d-flex justify-content-center">
+                    <div class="mb-5 p-5">
+                        <img id="refresh" src="./assets/refresh.png"  alt="">
+                    </div>
+                </div> -->
+            </div>
+        <!-- </div> -->
+        <!-- end content -->
+        <input type="hidden" value="" data="kertas" id="user-score" />
+        <input type="hidden" value="" id="com-score" />
+    </section>
+    <script src="./script.js"></script>
+    <script>
+        const userScissors = document.getElementById('player-gunting')
+        const userRock = document.getElementById('player-batu')
+        const userPaper = document.getElementById('player-kertas')
+
+        userPaper.addEventListener('click', function () {
+            console.log('clicked')
+
+            document.getElementById('user-score').value = 'Kertas'
+
+            function setUserChoice () {
+                document.getElementById('user-score').value = 'Kertas'
+            }
+
+            setUserChoice()
+
+            function getUserChoice () {
+                console.log(document.getElementById('user-score').value)
+            }
+
+            getUserChoice()
+
+            
+        })
+
+        console.log(userPaper, "log")
+
+    </script>
+</body>
+
+</html>

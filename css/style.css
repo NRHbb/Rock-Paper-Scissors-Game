@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    font-family: "Open-Sans", sans-serif;
+    background: rgba(156, 131, 95, 1);
+}
+/* background */
+#rock-paper-scissors{
+    min-height: 100vh;
+}
+.content{
+    margin-bottom: 150px;
+}
+
+/* typografi */
+h1.back-icon{
+    font-size: 72px;
+    font-weight: 700;
+    color: rgba(114, 76, 33, 1);
+}
+
+h1.user-player.user-com{
+    font-size: 36px;
+    color: rgba(0, 0, 0, 1);
+}
+
+p.title{
+    font-size: 36px;
+    font-weight: 700;
+    color: rgba(249, 178, 61, 1);
+}
+
+p.result{
+    font-size: 144px;
+    font-weight: 700;
+    color: rgba(189, 0, 0, 1);
+}
+/* button */
+button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 223px;
+    height: 204px;
+}
+
+button:hover {
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 30px;
+}
+
+button img{
+    width: 128px;
+}
+
+#refresh{
+    width: 77px;
+    cursor: pointer;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* js result */
+.game-result {
+    color: white;
+    font-size: 38px;
+    letter-spacing: 4px;
+    border-radius: 10px;
+}
+.game-result-win {
+    background-color: rgba(76, 150, 84, 1);
+}
+.game-result-draw {
+    background: rgb(54, 110, 60);
+}
+.rotate {
+    transform: rotate(-28.87deg);
+}
