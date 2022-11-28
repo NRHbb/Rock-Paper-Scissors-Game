@@ -39,11 +39,10 @@
         <!-- end header -->
       
         <!-- content -->
-        <!-- <div class="container d-flex flex-column"> -->
-            <div class="content d-flex justify-content-center">
+            <div class="game-content d-flex justify-content-center">
                 <!-- player -->
-                <div class="player-side d-flex flex-column align-items-center">
-                    <h1 class="user-player fw-bold text-uppercase">player 1</h1>
+                <div class="player-side col-md-3 d-flex flex-column align-items-center">
+                    <h1 class="player fw-bold text-uppercase">player 1</h1>
                     <button id="player-batu" class="">
                         <img src="./assets/batu.png" alt="">
                     </button>
@@ -55,15 +54,14 @@
                     </button>
                 </div>
                 <!-- result -->
-                <div id="result" class=" d-flex justify-content-center align-items-center position-relative">
-                    <div class="mx-5">
-                        <p class="result text-uppercase">vs</p>
-                        <img id="refresh" src="./assets/refresh.png"  class="position-absolute">
+                <div id="result" class=" text-result d-flex justify-content-center align-items-center">
+                    <div class="mx-5 my-5">
+                        <p class="outcome d-flex text-uppercase">vs</p>
                     </div>                    
                 </div>
                 <!-- com -->
-                <div class="com-side d-flex flex-column align-items-center">
-                    <h1 class="user-com fw-bold text-uppercase">com</h1>
+                <div class="com-side col-md-3 d-flex flex-column align-items-center">
+                    <h1 class="computer fw-bold text-uppercase">com</h1>
                     <button id="com-batu" class="">
                         <img src="./assets/batu.png" alt="">
                     </button>
@@ -74,19 +72,16 @@
                         <img src="./assets/gunting.png" alt="">
                     </button>
                 </div>
-                <!-- refresh --> 
-                <!-- <div class="container d-flex justify-content-center">
-                    <div class="mb-5 p-5">
-                        <img id="refresh" src="./assets/refresh.png"  alt="">
+                <div class="row text-center align-items-center position-relative">
+                    <div class="justify-content-center position-absolute">
+                        <img id="refresh" src="./assets/refresh.png" alt="">
                     </div>
-                </div> -->
+                </div>
             </div>
-        <!-- </div> -->
         <!-- end content -->
-        <input type="hidden" value="" data="kertas" id="user-score" />
-        <input type="hidden" value="" id="com-score" />
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
-
+    
 </html>

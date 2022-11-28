@@ -12,7 +12,7 @@ body{
 #rock-paper-scissors{
     min-height: 100vh;
 }
-.content{
+.game-content{
     margin-bottom: 150px;
 }
 
@@ -23,7 +23,7 @@ h1.back-icon{
     color: rgba(114, 76, 33, 1);
 }
 
-h1.user-player.user-com{
+h1.player .computer{
     font-size: 36px;
     color: rgba(0, 0, 0, 1);
 }
@@ -34,11 +34,7 @@ p.title{
     color: rgba(249, 178, 61, 1);
 }
 
-p.result{
-    font-size: 144px;
-    font-weight: 700;
-    color: rgba(189, 0, 0, 1);
-}
+
 /* button */
 button{
     border: none;
@@ -59,15 +55,29 @@ button img{
 #refresh{
     width: 77px;
     cursor: pointer;
-    bottom: -40px;
-    left: 50%;
+    bottom: -550px;
+    right: 50%;
     transform: translateX(-50%);
 }
-
+/* result */
+div.text-result{
+    width: 271.11px;
+    height: 166.93px;
+    margin: 3rem 0;
+}
+.outcome{
+    font-size: 144px;
+    font-weight: 700;
+    color: rgba(189, 0, 0, 1);
+}
 /* js result */
+.active{
+    background-color:rgba(196, 196, 196, 1);
+    border-radius: 20px;
+}
 .game-result {
     color: white;
-    font-size: 38px;
+    font-size: 38px; 
     letter-spacing: 4px;
     border-radius: 10px;
 }
