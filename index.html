@@ -23,7 +23,7 @@
 <body>
     <section id="rock-paper-scissors">
         <!-- header -->
-        <div class="container-fluid pt-5 mb-5">
+        <div class="container-fluid pt-3 mb-5">
             <div class="row align-items-center">
                 <div class="col-auto">
                     <h1 class="back-icon text-uppercase ms-4">&lt</h1>
@@ -87,34 +87,6 @@
         <input type="hidden" value="" id="com-score" />
     </section>
     <script src="./script.js"></script>
-    <script>
-        const userScissors = document.getElementById('player-gunting')
-        const userRock = document.getElementById('player-batu')
-        const userPaper = document.getElementById('player-kertas')
-
-        userPaper.addEventListener('click', function () {
-            console.log('clicked')
-
-            document.getElementById('user-score').value = 'Kertas'
-
-            function setUserChoice () {
-                document.getElementById('user-score').value = 'Kertas'
-            }
-
-            setUserChoice()
-
-            function getUserChoice () {
-                console.log(document.getElementById('user-score').value)
-            }
-
-            getUserChoice()
-
-            
-        })
-
-        console.log(userPaper, "log")
-
-    </script>
 </body>
 
 </html>
