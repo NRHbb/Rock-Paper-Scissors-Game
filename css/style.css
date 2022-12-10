@@ -55,9 +55,13 @@ button img{
 #refresh{
     width: 77px;
     cursor: pointer;
-    bottom: -550px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 370px;
+    
+    /* bottom: -550px;
     margin-right: 50%;
-    /* transform: translateX(-50%); */
+    transform: translateX(-50%); */
 }
 /* result */
 div.text-result{
@@ -70,6 +74,9 @@ div.text-result{
     font-size: 144px;
     font-weight: 700;
     color: rgba(189, 0, 0, 1);
+    justify-content: center;
+    align-items: center;
+    padding-top: 420px;
 }
 /* js result */
 .active{
