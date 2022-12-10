@@ -44,7 +44,7 @@ button{
 }
 
 button:hover {
-    background-color: rgba(196, 196, 196, 1);
+    background-color: rgb(140, 124, 124);
     border-radius: 30px;
 }
 
@@ -56,14 +56,15 @@ button img{
     width: 77px;
     cursor: pointer;
     bottom: -550px;
-    right: 50%;
-    transform: translateX(-50%);
+    margin-right: 50%;
+    /* transform: translateX(-50%); */
 }
 /* result */
 div.text-result{
     width: 271.11px;
     height: 166.93px;
     margin: 3rem 0;
+
 }
 .outcome{
     font-size: 144px;
@@ -76,17 +77,22 @@ div.text-result{
     border-radius: 20px;
 }
 .game-result {
-    color: white;
-    font-size: 38px; 
+    color: white !important;
+    font-size: 38px ; 
     letter-spacing: 4px;
     border-radius: 10px;
+}
+
+#result.active{
+    transform: rotate(-28.87deg);
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+
 }
 .game-result-win {
     background-color: rgba(76, 150, 84, 1);
 }
 .game-result-draw {
     background: rgb(54, 110, 60);
-}
-.rotate {
-    transform: rotate(-28.87deg);
 }
