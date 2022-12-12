@@ -93,8 +93,10 @@ div.text-result{
 #result.active{
     transform: rotate(-28.87deg);
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     text-align: center;
+    margin-top: 220px;
+    margin-bottom: -80px;
 
 }
 .game-result-win {

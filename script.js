@@ -32,33 +32,31 @@ class game {
     }
     gameResult(player, com) {
         if (player.choose == "player-batu" && com.choose == "com-batu") {
-            return(this.result = "draw");
+            return (this.result = "draw");
         }
         if (player.choose == "player-kertas" && com.choose == "com-kertas") {
-            return(this.result = "draw");
+            return (this.result = "draw");
         }
         if (player.choose == "player-gunting" && com.choose == "com-gunting") {
-            return(this.result = "draw");
+            return (this.result = "draw");
         }
         if (player.choose == "player-batu") {
             if (com.choose == "com-gunting") {
-                return(this.result = "player 1 win")
+                return (this.result = "player 1 win")
             }
-            else { return(this.result = "com win"); }
+            else { return (this.result = "com win"); }
         }
         if (player.choose == "player-kertas") {
             if (com.choose == "com-batu") {
-                return(this.result = "player 1 win")
+                return (this.result = "player 1 win")
             }
-            else {
-                return(this.result = "com win");
-            }
+            else { return (this.result = "com win"); }
         }
         if (player.choose == "player-gunting") {
             if (com.choose == "com-kertas") {
-                return(this.result = "player 1 win")
+                return (this.result = "player 1 win")
             }
-            else { return(this.result = "com win"); }
+            else { return (this.result = "com win"); }
         }
     }
     setActive(player, com) {
