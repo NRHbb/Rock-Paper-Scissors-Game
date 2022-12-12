@@ -62,7 +62,6 @@ class game {
         }
     }
     setActive(player, com) {
-        console.log("debug", player.choose)
         let p
         if (player.choose === "player-batu") {
             p = document.getElementById("player-batu")
@@ -100,9 +99,7 @@ class game {
         const c = document.getElementById(com.choose);
         p.classList.remove("active");
         c.classList.remove("active");
-        this.textBox.classList.remove(
-            "active"
-        );
+        this.textBox.classList.remove("active");
         this.textResult.innerHTML = "vs";
         this.textResult.classList.replace("game-result", "outcome");
         if (this.result == "draw") {
@@ -127,6 +124,7 @@ refresh.addEventListener("click", () => {
     counter = 0;
 });
 
+// play button
 const btnbatu = document.getElementById("player-batu")
 btnbatu.addEventListener("click", () => {
     human.setPlayerChoose("player-batu");
