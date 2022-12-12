@@ -153,3 +153,4 @@ btngunting.addEventListener("click", () => {
 
     play.setActive(human, com);
 })
+
