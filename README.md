@@ -2,31 +2,36 @@
 
 step by step pengerjaan js
 
-Mendefinisikan Kelas Player dan Kelas Computer:
+1. Mendefinisikan Kelas Player dan Kelas Computer:
 
 Kode dimulai dengan mendefinisikan kelas Player dan Computer.
 Kelas Player memiliki properti choose yang awalnya diatur menjadi null dan metode setPlayerChoose() untuk mengatur pilihan pemain.
 Kelas Computer merupakan turunan dari Player dan menambahkan metode setComputerChoose() yang secara acak memilih pilihan komputer dari array opsi.
-Mendefinisikan Kelas Game:
+
+2. Mendefinisikan Kelas Game:
 
 Kode kemudian mendefinisikan kelas Game, yang menerima instance Player dan Computer sebagai parameter pada konstruktor.
 Kelas Game memiliki properti untuk menyimpan pemain, komputer, dan hasil permainan.
 Kelas ini juga memiliki properti yang mereferensikan elemen-elemen HTML pada halaman, seperti elemen teks dan tombol refresh.
 Dalam konstruktor, event listener ditambahkan ke tombol refresh untuk mengaktifkan metode setRefresh() saat tombol tersebut diklik.
-Menentukan Hasil Permainan:
+
+3. Menentukan Hasil Permainan:
 
 Kode selanjutnya menyediakan metode gameResult() dalam kelas Game untuk menentukan hasil permainan berdasarkan pilihan pemain dan komputer.
 Metode ini membandingkan pilihan pemain dengan pilihan komputer dan mengatur properti result sesuai dengan hasilnya (misalnya, "player 1 win", "draw", atau "com win").
-Mengatur Tampilan Aktif:
+
+4. Mengatur Tampilan Aktif:
 
 Kelas Game juga memiliki metode setActive() untuk mengubah tampilan antarmuka pengguna (UI) saat permainan sedang berlangsung.
 Metode ini menambahkan kelas CSS ke elemen-elemen HTML yang merepresentasikan pilihan pemain dan komputer.
 Selain itu, metode ini juga mengubah teks dan kelas CSS pada elemen teks untuk menampilkan hasil permainan.
-Mengatur Refresh:
+
+5. Mengatur Refresh:
 
 Metode setRefresh() digunakan untuk mengatur ulang permainan dan tampilan antarmuka pengguna saat tombol refresh diklik.
 Metode ini menghapus kelas aktif dari elemen-elemen HTML, mengatur teks kembali menjadi "vs", dan menghapus kelas CSS yang menunjukkan hasil permainan sebelumnya.
-Membuat Instance dan Pendengar Acara:
+
+6. Membuat Instance dan Pendengar Acara:
 
 Setelah mendefinisikan kelas-kelas dan metode-metode, instance dari Player, Computer, dan Game dibuat.
 Setiap tombol (batu, kertas, dan gunting) pada halaman HTML didapatkan menggunakan getElementById.
